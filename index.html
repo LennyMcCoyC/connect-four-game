@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Connect Four Game</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="rules">
+      <h1>RULES</h1>
+      <div class="objective">
+        <p class="objective-p">OBJECTIVE</p>
+        <p>
+          Be the first player to connect 4 of the same colored discs in a row
+          (either vertically, horizontally, or diagonally).
+        </p>
+      </div>
+
+      <div class="how-to-play">
+        <p>HOW TO PLAY</p>
+        <ol>
+          <li>Red goes first in the first game.</li>
+          <li>
+            Players must alternate turns, and only one disc can be dropped in
+            each turn.
+          </li>
+          <li>The game ends when there is a 4-in-a-row or a stalemate.</li>
+          <li>
+            The starter of the previous game goes second on the next game.
+          </li>
+        </ol>
+      </div>
+
+      <img
+        class="check-icon"
+        src="/assets/images/icon-check.svg"
+        alt="check icon"
+      />
+    </div>
+    <div class="board-wrapper">
+      <nav>
+        <button id="rules">RULES</button>
+        <img src="/assets/images/logo.svg" alt="logo" />
+        <button id="restart">RESTART</button>
+      </nav>
+      <div class="board-wrapper">
+        <div class="board-wrapper-main">
+          <div id="board-marker">
+            <div class="marker" id="marker-zero"></div>
+            <div class="marker" id="marker-one"></div>
+            <div class="marker" id="marker-two"></div>
+            <div class="marker" id="marker-three"></div>
+            <div class="marker" id="marker-four"></div>
+            <div class="marker" id="marker-five"></div>
+            <div class="marker" id="marker-six"></div>
+          </div>
+
+          <div id="board">
+            <div id="tile-wrapper"></div>
+          </div>
+          <div id="board-bottom-layer"></div>
+        </div>
+
+        <div class="player-countdown-red">
+          <p>
+            <span data-player> PLAYER 1'S TURN</span>
+            <br />
+            <span data-timer></span><span></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

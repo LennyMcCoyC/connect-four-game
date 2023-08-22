@@ -218,7 +218,7 @@ nav img {
   border-radius: 40px;
   position: absolute;
   top: 200px;
-  padding: 2rem;
+  padding: 1.875rem;
   border-bottom: 10px solid black;
   display: flex;
   flex-direction: column;
@@ -229,29 +229,39 @@ nav img {
 }
 
 .objective {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin-top: 1rem;
 }
 .objective .objective-p {
   color: hsl(257, 100%, 64%);
   margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.objective p {
+  font-size: 0.75rem;
 }
 .objective span {
   color: hsl(0, 0%, 0%);
 }
 
+.how-to-play {
+  margin-top: 1.5rem;
+}
 .how-to-play p {
   color: hsl(257, 100%, 64%);
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 .how-to-play ol li {
   margin: 0.5rem 1rem 0 1rem;
+  font-size: 0.75rem;
 }
 
 .check-icon {
   width: 64px;
   align-self: center;
-  margin-top: 2rem;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 50%);
   cursor: pointer;
 }
 

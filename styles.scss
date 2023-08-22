@@ -231,7 +231,7 @@ nav {
   border-radius: 40px;
   position: absolute;
   top: 200px;
-  padding: 2rem;
+  padding: 1.875rem;
   border-bottom: 10px solid black;
   display: flex;
   flex-direction: column;
@@ -243,11 +243,15 @@ nav {
 }
 
 .objective {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  margin-top: 1rem;
+
   .objective-p {
     color: $purple;
     margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.75rem;
   }
 
   span {
@@ -256,14 +260,17 @@ nav {
 }
 
 .how-to-play {
+  margin-top: 1.5rem;
   p {
     color: $purple;
     margin-bottom: 1rem;
+    font-size: 1rem;
   }
 
   ol {
     li {
       margin: 0.5rem 1rem 0 1rem;
+      font-size: 0.75rem;
     }
   }
 }
@@ -271,7 +278,9 @@ nav {
 .check-icon {
   width: 64px;
   align-self: center;
-  margin-top: 2rem;
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 50%);
   cursor: pointer;
 }
 
